@@ -85,6 +85,7 @@ function getRandomIntegers(n, min, max) {
     const value = getRandomInteger(min, max);
     if (!res.includes(value)) {
       res.push(value);
+          console.log(res.push(value))
     }
   }
   
