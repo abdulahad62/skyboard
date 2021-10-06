@@ -5,6 +5,24 @@ btn.addEventListener('click', () => {
   rootBody.innerHTML = '';
   runGame();
 });
+window.addEventListener('load',()=>{
+    let j = 2
+    var form = document.getElementById('form-data')
+    form.addEventListener('submit',(event)=>{
+        event.preventDefault()
+        $('#cards').empty()
+        fetchData(event.target)
+    })
+    var addBtn = document.getElementById('add')
+    addBtn.addEventListener('click',(event)=>{
+        event.preventDefault()
+        j++
+        if(j<=5)
+        addCountry(j)
+        else alert("it's sorry that it can only track 5 countries!")
+    })
+    fillDataList()
+})
 
 function runGame() {
   // These values are constant during the game,
