@@ -16,6 +16,12 @@ from keras.preprocessing.image import img_to_array
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+from pathlib import Path
+import os
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 EPOCHS = 25
 INIT_LR = 1e-3
 BS = 32
