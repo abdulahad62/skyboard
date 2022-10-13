@@ -126,7 +126,7 @@ opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 
 model.compile(loss="binary_crossentropy", optimizer=opt,metrics=["accuracy"])
 
-print("[INFO] training network...")
+print("[INFO] training network... and all other detais")
 history = model.fit_generator(
     aug.flow(x_train, y_train, batch_size=BS),
     validation_data=(x_test, y_test),
