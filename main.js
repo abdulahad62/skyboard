@@ -78,7 +78,7 @@ function runGame() {
   } else {
     logStr("Out of petrol :'(");
   }
-  
+  const location = position?"You've reached your destination!":""
   function isAtPump() {
     return petrolPumpLocations.includes(position);
   }
